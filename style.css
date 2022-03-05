@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;700&family=Lora:ital,wght@1,400;1,500;1,700&display=swap');
+
+/* Padrões */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --rosa: #FF7D7D;
+    --verde: #A8CF45;
+    --amarelo: #F4DD7D;
+    --body-fonts: 'Hind Madurai', sans-serif;
+    --titulo-principal: 'Montserrat', sans-serif;
+    --titulos: 'Lora', serif;
+}
+
+section, aside {
+    padding: 5rem;
+}
+
+.destaque {
+    font-weight: bolder;
+    transition: text-decoration 1s;
+    -webkit-transition: text-decoration 1s;
+}
+
+.destaque:hover {
+    text-decoration: underline wavy var(--rosa);
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline dashed;
+}
+
+cite {
+    font: normal 1em var(--titulos);
+    margin: 1rem 0;
+}
+
+cite::before {
+    content: '- ';
+}
+
+
+
+
+
+/* header */
+header {
+    background-color: whitesmoke;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+#logo h1 {
+    font-size: clamp(30px, 3vw, 2.5em);
+    font-family: 'WindSong', 'Montserrat';
+    padding-left: 20px;   
+}
+
+#logo h1:hover {
+    text-shadow: 2px 2px 2px lightgray;
+}
+
+#repositorio {
+    position: fixed;
+    left: 90%;
+}
+
+/* banner principal */
+
+#banner {
+    background-image: linear-gradient(to bottom right, var(--verde), var(--amarelo), var(--rosa));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+#banner .banner__txt h1 {
+    font: bolder 4rem var(--titulo-principal);
+}
+
+#banner .banner__txt h2 {
+    font: normal 2rem var(--titulos);
+    width: 70%;
+}
+
+/* O que são posições relativas em css */
+
+#definicao {
+    background-image: linear-gradient(to bottom right, whitesmoke, lightgray);
+}
+
+#definicao h1 {
+    font: bolder 1em var(--titulo-principal);
+    color: var(--rosa);
+}
+
+#definicao h2 {
+    font: bold 2em var(--titulos);
+}
+
+#definicao p {
+    font: normal 1.3em var(--body-fonts);
+    width: 70%;
+    margin-top: 1em;
+}
+
+
+/* Posições */
+
+
+#relativa, #absoluta, #sticky, #fixed {
+    display: flex;
+    justify-content: space-between;    
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.explicativo {
+    width: 60%;
+}
+
+.explicativo h2 {
+    font: bold 2em var(--titulos);
+    
+}
+
+.explicativo h3 {
+    font: bold 1.3em var(--titulos);
+    font-style: italic;
+}
+
+.explicativo p {
+    font: normal 1.3em var(--body-fonts);
+    margin: .5em 0;
+    width: 70%;
+}
+
+
+
+.blocos > div {
+    display: inline-block;  
+} 
+
+.referencias {
+    width: 10em;
+    height: 10em;
+    background-color: var(--rosa);
+    margin: 5px;
+
+}
+
+
+.meio {
+    width: 10em;
+    height: 10em;
+    background-color: lightseagreen;
+    transition-duration: 2s;
+}
+
+#relativa .meio:hover{
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
+
+.original {
+    width: 10em;
+    height: 10em;
+    border: 1px dashed lightseagreen;
+}
+
+
+
+#absoluta {
+    position: relative;
+}
+
+#absoluta .meio:hover {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+
+#sticky .meio {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+/* Sobre a Mariella */
+
+aside {
+    background-color: var(--amarelo);
+}
+
+
+
+
+
+

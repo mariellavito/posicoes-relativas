@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Posições Relativas em CSS</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/header/logo-mari.png
+            " alt="Logo Mariella Vito" onmouseover="this.src='imagens/header/logo-mari-2.png'" onmouseout="this.src='imagens/header/logo-mari.png'">
+            <h1>Mariella Vito</h1>
+        </div>
+        <div id="repositorio">
+            <a href="https://github.com/mariellavito" target="_blank">
+                <img src="imagens/header/repositorio-github-mariella-vito.gif" alt="Icone que ilustra meu repositorio no GitHub">
+            </a>
+        </div>
+     
+    </header>
+  
+    <main>
+
+        <!-- Banner Principal -->
+        <section id="banner">
+            <div class="banner__txt">
+                <h1> Posições em CSS </h1>
+                <h2> Como posicionar objetos a partir da propriedade position.</h2>
+            </div>
+            <figure>
+                <img src="imagens/banner/posicao-relativa-css.png" alt="Imagem que ilustra como funciona a posição relativa dos objetos em CSS" onmouseover="this.src='imagens/banner/posicao-relativa-css-1.png'" onmouseout="this.src='imagens/banner/posicao-relativa-css.png'">
+            </figure>
+        </section>
+
+        <!-- O que são posições relativas em css -->
+
+        <section id="definicao"> 
+            <h1>POSIÇÕES EM CSS</h1>
+            <h2>O que é e como essa propriedade pode te ajudar </h2>
+
+            <p> A <span class="destaque">propriedade position</span> especifica o tipo de método de posicionamento usado para um elemento. </p>
+
+            <p> Existem cinco valores de posição diferentes: estático, <a href="#relativa">relativo</a>, <a href="#fixed">fixo</a>, <a href="#absoluta">absoluto</a> e <a href="#sticky">sticky</a></p>    
+           
+            <p>Os elementos são posicionados usando as propriedades superior, inferior, esquerda e direita. No entanto, essas propriedades não funcionarão a menos que a propriedade position seja definida primeiro. Eles também funcionam de forma diferente dependendo do valor da posição. </p>
+
+            <cite><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">W3 Schools</a></cite>
+        </section>
+
+        <section id="relativa">
+
+            <div class="explicativo">
+                <h2>Posição Relativa</h2>
+                <h3>position: relative;</h3>
+
+                <p> A <span class="destaque">posição relativa</span> movimenta o elemento em relação ao seu espaço original. Um outra caracteristica deste valor é a manutenção do espaço que ele ocupava. </p>
+                <p>🖱️ Passe o mouse sobre o bloco verde e confira o resultado dos seguintes valores:</p>
+                <p> {position: relative; bottom: 50px; left: 100px;}</p>
+            </div>
+
+            <div class="blocos">
+                <div class="referencias"></div>
+                <!--<div class="original"></div>-->
+                <div class="meio"></div>
+                <div class="referencias"></div>
+                
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="absoluta">
+
+            <div class="blocos">
+                <div class="referencias"></div>
+                <div class="meio"></div>
+                <div class="referencias"></div>
+                
+            </div>
+
+            <div class="explicativo">
+                <h2>Posição Absoluta</h2>
+                <h3>position: absolut;</h3>
+
+                <p> A <span class="destaque">posição absoluta</span> movimenta o elemento em relação ao body, desconsiderando sua posição original. Este valor não mantém o espaço do elemento, desconsiderando-o totalmente. </p>
+
+                <p>Por isso que, mesmo uilizando a mesma configuração da posição relativa, o objeto se movimentou de forma diferente na tela.</p>
+
+                <p>🖱️ Passe o mouse sobre o bloco verde para ver o resultado.</p>
+
+                
+            </div>
+
+            
+        </section>
+
+        <hr>
+       
+        <section id="sticky">
+            <div class="explicativo">
+                
+                <h2>Posição Sticky</h2>
+                <h3>position: sticky;</h3>
+
+                <p> Com esta posição ativa, o elemento rolará junto com o contêiner, até que alcance o deslocamento especificado. Em seguida, parará de rolar, para permanecer visível.</p>
+                <p>Para ver essa propriedade em ação, continue descendo a página.</p>
+                <p>-</p>
+                <p><i>Este conteúdo é fornecido apenas para permitir que você utilize a barra de rolagem e veja o efeito da propriedade.</i><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam quaerat tempora, id iusto vitae quod, accusantium natus excepturi quasi commodi iste aliquid eligendi quis aspernatur numquam culpa enim ipsum.</p>
+            </div>
+
+            <div class="referencias"></div>
+            <div class="meio"></div>
+            <div class="referencias"></div>
+
+            <div class="explicativo">
+                
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="fixed">
+            <div class="explicativo">
+                <h2>Posição Fixa</h2>
+                <h3>position: fixed;</h3>
+
+                <p>Esta posição mantém o elemento fixo em relação ao <i>body</i>. </p>
+                <p>É o que acontece com essa simpática nuvenzinha do lado direito superior da tela. Você pode navegar pela página livremente, e ela permanece fixa, sempre no mesmo lugar.</p>
+                <p>Ah! Ela também é um <a href="https://github.com/mariellavito">link para o meu repositorio</a>, com outros exercícios e páginas como esta 😉. </p>
+            </div>
+
+        </section>
+
+        <!-- Sobre a Mariella -->
+
+        <aside>
+            <p>HELLO WORLD!</p>
+            <h1>EU SOU A MARIELLA</h1>
+
+
+HELLO WORLD!
+
+EU SOU A MARIELLA
+Comecei minha carreira em marketing como estagiária, em uma famosa startup de tecnologia Brasileira.
+Hoje sou coordenadora generalista em marketing digital, porém minha especialidade é marketing de conteúdo e estratégias de SEO.
+Comecei a me interessar por linhas de código para ganhar tempo entre os sprints dos programadores.
+Sou autoditada. Tudo que eu consegui fazer até aqui foi a base de pesquisa, vídeos do youtube e muita documentação.
+Todo o meu portfólio é baseado no meu conhecimento - mesmo! Não tem uma linha de código copiada. Se esta aqui, é porque eu sei fazer.
+
+        </aside>
+
+        
+    </main>
+    <footer>
+        <a href="https://lordicon.com/">Animated icons by Lordicon.com</a>
+    </footer>
+</body>
+</html>
