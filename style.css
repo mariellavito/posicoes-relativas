@@ -50,9 +50,6 @@ cite::before {
 }
 
 
-
-
-
 /* header */
 header {
     background-color: whitesmoke;
@@ -126,7 +123,6 @@ header {
 
 /* Posições */
 
-
 #relativa, #absoluta, #sticky, #fixed {
     display: flex;
     justify-content: space-between;    
@@ -155,7 +151,6 @@ header {
 }
 
 
-
 .blocos > div {
     display: inline-block;  
 } 
@@ -165,9 +160,7 @@ header {
     height: 10em;
     background-color: var(--rosa);
     margin: 5px;
-
 }
-
 
 .meio {
     width: 10em;
@@ -187,8 +180,6 @@ header {
     height: 10em;
     border: 1px dashed lightseagreen;
 }
-
-
 
 #absoluta {
     position: relative;
@@ -211,7 +202,57 @@ header {
 
 aside {
     background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-around;
+
 }
+
+.sobre-mim {
+    width: 50%;
+
+} 
+
+aside h3 {
+    font: bold 2em var(--titulos);
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+aside p,ul {
+    font: normal 1.3em var(--body-fonts);
+}
+
+aside li {
+    list-style: none;
+}
+
+.icones {
+    transition: font-size 1.3s;
+}
+
+.icones:hover {
+    font-size: 1.6em;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--verde);
+    padding: 1rem;
+    transition: 1s ;
+    text-align: center;
+    font: normal 1em var(--body-fonts);
+
+}
+
+footer:hover {
+    background-color: var(--rosa);
+}
+
+
+
+
 
 
 
